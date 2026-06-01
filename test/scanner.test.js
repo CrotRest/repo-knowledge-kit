@@ -54,3 +54,15 @@ Use [[README]] for context.
   assert.equal(report.folders.some((folder) => folder.folder === "docs"), true);
   assert.equal(report.pages.find((page) => page.path === "docs/triage.md").title, "Triage");
 });
+
+test("scanRepository ignores generated codex workflow directories", () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "rkk-"));
+  fs.mkdirSync(path.join(dir, ".codex", "workflows"), { recursive: true });
+  fs.writeFileSync(path.join(dir, "README.md"), "# Demo\n\nRoot docs.", "utf8");
+  fs.writeFileSync(path.join(dir, ".codex", "workflows", "generated.md"), "# Generated", "utf8");
+
+  const report = scanRepository(dir);
+
+  assert.equal(report.totals.markdownFiles, 1);
+  assert.equal(report.pages.some((page) => page.path.includes(".codex")), false);
+});

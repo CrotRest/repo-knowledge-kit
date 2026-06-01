@@ -1,5 +1,9 @@
 # repo-knowledge-kit
 
+[![CI](https://github.com/CrotRest/repo-knowledge-kit/actions/workflows/test.yml/badge.svg)](https://github.com/CrotRest/repo-knowledge-kit/actions/workflows/test.yml)
+[![Release](https://img.shields.io/github/v/release/CrotRest/repo-knowledge-kit)](https://github.com/CrotRest/repo-knowledge-kit/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Compile repository docs and wiki notes into Codex-ready maintainer workflows.
 
 Many open-source projects keep critical maintainer knowledge in README files, issue templates, Obsidian-style notes, release checklists, and scattered Markdown docs. Agents can help, but only when they can see stable project rules and evidence. `repo-knowledge-kit` scans that knowledge and generates reviewable workflow files for issue triage, pull request review, release preparation, and security or quality audits.
@@ -44,6 +48,27 @@ Generated files:
 
 The CLI refuses to overwrite existing files unless `--force` is passed.
 
+## Demo
+
+Run the included example:
+
+```bash
+node ./bin/rkk.js audit ./examples/oss-maintainer-wiki
+node ./bin/rkk.js init ./examples/oss-maintainer-wiki --force
+```
+
+See [docs/demo.md](docs/demo.md) for sample output.
+
+## Dogfood
+
+This repository uses `repo-knowledge-kit` on itself. The generated files are committed so maintainers and agents can inspect the project rules directly:
+
+- [AGENTS.md](AGENTS.md)
+- [.codex/workflows/issue-triage.md](.codex/workflows/issue-triage.md)
+- [.codex/workflows/pr-review.md](.codex/workflows/pr-review.md)
+- [.codex/workflows/release-prep.md](.codex/workflows/release-prep.md)
+- [.codex/workflows/security-quality.md](.codex/workflows/security-quality.md)
+
 ## Example
 
 ```bash
@@ -73,7 +98,17 @@ Generates Codex maintainer workflows and an audit report.
 
 ## Project Status
 
-This is an early maintainer-focused MVP. The core CLI is dependency-free and designed for deterministic output. Next useful milestones are GitHub Actions integration, richer issue template detection, changelog-aware release notes, and optional API-powered summaries.
+This is an early maintainer-focused MVP. The core CLI is dependency-free and designed for deterministic output. Next useful milestones are richer issue template detection, changelog-aware release notes, multi-repository case studies, and optional API-powered summaries.
+
+## Open Source Readiness
+
+- Public GitHub repository
+- MIT license
+- Security policy and code of conduct
+- Issue and pull request templates
+- CI workflow
+- Versioned release
+- Dogfooded `AGENTS.md` and Codex workflow files
 
 ## License
 
