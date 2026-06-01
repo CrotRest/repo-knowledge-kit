@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.3
 
 - Harden generated file writes so output paths cannot escape the selected repository root.
 - Add npm publishing checklist documentation.
