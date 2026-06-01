@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- Fix npm `bin` metadata so global installs expose `rkk` and `repo-knowledge-kit`.
+
 ## 0.1.4
 
 - Add `rkk release-prep` for deterministic changelog-aware release preparation.
