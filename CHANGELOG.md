@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Add `rkk issue-triage` with local, prompt-only, and explicit opt-in OpenAI API modes.
+
 ## 0.1.5
 
 - Fix npm `bin` metadata so global installs expose `rkk` and `repo-knowledge-kit`.

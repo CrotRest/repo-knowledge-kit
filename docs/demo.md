@@ -53,3 +53,16 @@ node ./bin/rkk.js release-prep .
 ```
 
 The command reads local release context and prints a maintainer checklist with candidate changelog notes, commits since the latest tag, and changed files.
+
+## Issue Triage
+
+```bash
+node ./bin/rkk.js issue-triage ./examples/oss-maintainer-wiki/docs/sample-issue.md
+node ./bin/rkk.js issue-triage ./examples/oss-maintainer-wiki/docs/sample-issue.md --prompt
+```
+
+The default mode is local and deterministic. API use is opt-in:
+
+```bash
+OPENAI_API_KEY=... node ./bin/rkk.js issue-triage ./examples/oss-maintainer-wiki/docs/sample-issue.md --api
+```

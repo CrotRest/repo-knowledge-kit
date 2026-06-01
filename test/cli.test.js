@@ -3,7 +3,7 @@ const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
 const test = require("node:test");
-const { isPathInside, writeGeneratedFiles } = require("../src/cli");
+const { isPathInside, resolveRootArg, writeGeneratedFiles } = require("../src/cli");
 
 test("isPathInside accepts nested repository paths", () => {
   const root = path.resolve("/tmp/repo");
@@ -34,5 +34,16 @@ test("writeGeneratedFiles refuses to write outside repository root", () => {
   assert.throws(
     () => writeGeneratedFiles(dir, { "../outside.md": "bad" }, true),
     /outside repository root/
+  );
+});
+
+test("resolveRootArg uses first positional root for repository commands", () => {
+  assert.equal(resolveRootArg(["audit", "/tmp/repo"], "audit"), path.resolve("/tmp/repo"));
+});
+
+test("resolveRootArg lets --root override positional root", () => {
+  assert.equal(
+    resolveRootArg(["audit", "/tmp/repo", "--root", "/tmp/other"], "audit"),
+    path.resolve("/tmp/other")
   );
 });

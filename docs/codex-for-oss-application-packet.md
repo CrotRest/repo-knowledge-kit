@@ -21,7 +21,7 @@ Primary maintainer.
 - Issues: 4 closed, 1 open roadmap issue.
 - Public case studies: `openai/openai-node`, `openai/openai-python`, and `CrotRest/repo-knowledge-kit`.
 - Dogfoods generated `AGENTS.md` and `.codex/workflows/`.
-- Deterministic local commands: `audit`, `make-agents`, `init`, and `release-prep`.
+- Deterministic local commands: `audit`, `issue-triage`, `make-agents`, `init`, and `release-prep`.
 - Verified locally with `npm test`, `npm run smoke`, `node ./bin/rkk.js release-prep .`, and `npm pack --dry-run`.
 
 ## Qualification Answer
@@ -30,7 +30,7 @@ repo-knowledge-kit is a maintainer automation CLI for Markdown-heavy OSS project
 
 ## API Credits Answer
 
-API credits will power optional OSS maintainer automation: summarizing and classifying issues, drafting PR review checklists, generating release notes from repository history, compiling Markdown docs into repository knowledge maps, and producing security/quality audit prompts. Core scanning remains local and deterministic; API use will be opt-in for workflows where maintainers need synthesis.
+API credits will power optional OSS maintainer automation: summarizing and classifying issues through the opt-in `rkk issue-triage --api` workflow, drafting PR review checklists, generating release notes from repository history, compiling Markdown docs into repository knowledge maps, and producing security/quality audit prompts. Core scanning remains local and deterministic; API use is explicit opt-in.
 
 ## Anything Else
 
