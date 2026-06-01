@@ -17,7 +17,7 @@ Primary maintainer.
 - Security policy, code of conduct, contributing guide, issue templates, and pull request template.
 - GitHub Actions CI workflow.
 - Latest release: `v0.1.4`.
-- Merged pull requests: 7.
+- Merged pull requests: 8.
 - Issues: 4 closed, 1 open roadmap issue.
 - Public case studies: `openai/openai-node`, `openai/openai-python`, and `CrotRest/repo-knowledge-kit`.
 - Dogfoods generated `AGENTS.md` and `.codex/workflows/`.
