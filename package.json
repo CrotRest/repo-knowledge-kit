@@ -1,0 +1,27 @@
+{
+  "name": "repo-knowledge-kit",
+  "version": "0.1.0",
+  "description": "Compile repository docs and wiki notes into Codex-ready maintainer workflows.",
+  "type": "commonjs",
+  "bin": {
+    "rkk": "./bin/rkk.js",
+    "repo-knowledge-kit": "./bin/rkk.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "smoke": "node ./bin/rkk.js audit ./examples/oss-maintainer-wiki --json"
+  },
+  "keywords": [
+    "codex",
+    "open-source",
+    "maintainers",
+    "markdown",
+    "agents",
+    "obsidian"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
