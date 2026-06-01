@@ -8,7 +8,7 @@ repo-knowledge-kit helps maintainers convert repository documentation, wiki know
 
 Suggested 500-character answer:
 
-> repo-knowledge-kit is a maintainer automation CLI for Markdown-heavy OSS projects. It converts README, docs, issue templates, release notes, and wiki knowledge into Codex-ready workflows for PR review, issue triage, release prep, and security/quality checks. The project dogfoods its generated AGENTS.md and .codex workflows and is maintained publicly with issues, PRs, CI, releases, and MIT licensing.
+> repo-knowledge-kit is a maintainer automation CLI for Markdown-heavy OSS projects. It converts README, docs, issue templates, release notes, and wiki knowledge into Codex-ready workflows for PR review, issue triage, release prep, and security/quality checks. It dogfoods generated AGENTS.md/.codex workflows and has public issues, PRs, CI, releases, MIT licensing, and case studies on OpenAI SDK repos.
 
 ## API Credit Usage
 
