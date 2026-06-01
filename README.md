@@ -59,6 +59,14 @@ node ./bin/rkk.js init ./examples/oss-maintainer-wiki --force
 
 See [docs/demo.md](docs/demo.md) for sample output.
 
+## Public Case Studies
+
+The CLI has been run against public repositories to verify the audit shape on real maintainer surfaces:
+
+- [openai/openai-node](docs/case-studies/README.md#openaiopenai-node)
+- [openai/openai-python](docs/case-studies/README.md#openaiopenai-python)
+- [CrotRest/repo-knowledge-kit](docs/case-studies/README.md#crotrestrepo-knowledge-kit)
+
 ## Dogfood
 
 This repository uses `repo-knowledge-kit` on itself. The generated files are committed so maintainers and agents can inspect the project rules directly:
@@ -109,6 +117,7 @@ This is an early maintainer-focused MVP. The core CLI is dependency-free and des
 - CI workflow
 - Versioned release
 - Dogfooded `AGENTS.md` and Codex workflow files
+- Public case studies against real repositories
 
 ## License
 
