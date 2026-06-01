@@ -1,6 +1,7 @@
 const path = require("node:path");
 const { scanRepository } = require("./scanner");
 const { buildAgentsMarkdown, buildAuditMarkdown, buildWorkflowFiles } = require("./generators");
+const { buildReleasePrep, buildReleasePrepMarkdown } = require("./release-prep");
 const { fileExists, writeTextFile } = require("./fs-utils");
 
 function usage() {
@@ -8,11 +9,13 @@ function usage() {
 
 Usage:
   rkk audit [root] [--json]
+  rkk release-prep [root] [--json]
   rkk init [root] [--force]
   rkk make-agents [root] [--force]
 
 Commands:
   audit        Print a repository knowledge audit.
+  release-prep Print a changelog-aware release preparation report.
   init         Generate Codex maintainer workflows under .codex/workflows and .rkk.
   make-agents  Generate an AGENTS.md draft from repository knowledge.
 `;
@@ -32,6 +35,12 @@ async function run(args) {
   if (command === "audit") {
     const report = scanRepository(root);
     console.log(json ? JSON.stringify(report, null, 2) : buildAuditMarkdown(report));
+    return;
+  }
+
+  if (command === "release-prep") {
+    const report = buildReleasePrep(root);
+    console.log(json ? JSON.stringify(report, null, 2) : buildReleasePrepMarkdown(report));
     return;
   }
 

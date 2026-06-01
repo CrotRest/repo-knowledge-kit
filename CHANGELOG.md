@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Add `rkk release-prep` for deterministic changelog-aware release preparation.
+
 ## 0.1.3
 
 - Harden generated file writes so output paths cannot escape the selected repository root.

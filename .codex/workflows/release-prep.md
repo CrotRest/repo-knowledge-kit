@@ -2,6 +2,12 @@
 
 Use this workflow before tagging or publishing a release.
 
+For deterministic local context, run:
+
+```bash
+rkk release-prep .
+```
+
 ## Checklist
 
 - Summarize merged changes since the last release.

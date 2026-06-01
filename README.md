@@ -32,6 +32,7 @@ node ./bin/rkk.js --help
 
 ```bash
 rkk audit .
+rkk release-prep .
 rkk make-agents .
 rkk init .
 ```
@@ -93,6 +94,10 @@ node ./bin/rkk.js init ./examples/oss-maintainer-wiki --force
 ### `rkk audit [root] [--json]`
 
 Scans Markdown files and prints a repository knowledge audit.
+
+### `rkk release-prep [root] [--json]`
+
+Reads `CHANGELOG.md`, `package.json`, the latest git tag, commits, and changed files to print a deterministic release preparation report.
 
 ### `rkk make-agents [root] [--force]`
 
