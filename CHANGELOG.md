@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.4
 
 - Add `rkk release-prep` for deterministic changelog-aware release preparation.
 

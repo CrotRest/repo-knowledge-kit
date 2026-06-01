@@ -1,6 +1,6 @@
 {
   "name": "repo-knowledge-kit",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Compile repository docs and wiki notes into Codex-ready maintainer workflows.",
   "type": "commonjs",
   "repository": {
