@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Harden generated file writes so output paths cannot escape the selected repository root.
+- Add npm publishing checklist documentation.
+
 ## 0.1.2
 
 - Added public repository case studies for `openai/openai-node`, `openai/openai-python`, and `CrotRest/repo-knowledge-kit`.
