@@ -55,8 +55,13 @@ async function run(args) {
 }
 
 function writeGeneratedFiles(root, files, force) {
+  const absoluteRoot = path.resolve(root);
+
   for (const [relativePath, text] of Object.entries(files)) {
-    const target = path.join(root, relativePath);
+    const target = path.resolve(absoluteRoot, relativePath);
+    if (!isPathInside(absoluteRoot, target)) {
+      throw new Error(`Refusing to write outside repository root: ${relativePath}`);
+    }
     if (!force && fileExists(target)) {
       throw new Error(`Refusing to overwrite ${target}. Re-run with --force to replace it.`);
     }
@@ -64,8 +69,14 @@ function writeGeneratedFiles(root, files, force) {
   }
 }
 
+function isPathInside(root, target) {
+  const relative = path.relative(root, target);
+  return relative === "" || (!relative.startsWith("..") && !path.isAbsolute(relative));
+}
+
 module.exports = {
   run,
   usage,
-  writeGeneratedFiles
+  writeGeneratedFiles,
+  isPathInside
 };

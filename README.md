@@ -67,6 +67,10 @@ The CLI has been run against public repositories to verify the audit shape on re
 - [openai/openai-python](docs/case-studies/README.md#openaiopenai-python)
 - [CrotRest/repo-knowledge-kit](docs/case-studies/README.md#crotrestrepo-knowledge-kit)
 
+## Publishing
+
+The package is ready for npm publication once maintainer npm credentials are available. See [docs/npm-publishing.md](docs/npm-publishing.md).
+
 ## Dogfood
 
 This repository uses `repo-knowledge-kit` on itself. The generated files are committed so maintainers and agents can inspect the project rules directly:
