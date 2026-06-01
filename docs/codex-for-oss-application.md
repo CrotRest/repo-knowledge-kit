@@ -2,6 +2,8 @@
 
 This project is shaped for maintainers of active open-source repositories.
 
+For a complete evidence summary and form-ready answers, see [codex-for-oss-application-packet.md](codex-for-oss-application-packet.md).
+
 ## Repository Qualification
 
 repo-knowledge-kit helps maintainers convert repository documentation, wiki knowledge, and maintenance rules into Codex-ready workflows for pull request review, issue triage, release preparation, and security or quality audits.
