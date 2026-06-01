@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.6
 
 - Add `rkk issue-triage` with local, prompt-only, and explicit opt-in OpenAI API modes.
 
