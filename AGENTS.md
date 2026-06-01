@@ -7,15 +7,16 @@ This repository contains a Markdown-heavy open-source project. Agents should use
 ## Important Knowledge Areas
 
 - `./`: 7 Markdown files
+- `docs/`: 4 Markdown files
 - `examples/`: 4 Markdown files
 - `.github/`: 3 Markdown files
-- `docs/`: 2 Markdown files
 
 ## Read First
 
 - `CONTRIBUTING.md`
 - `README.md`
 - `SECURITY.md`
+- `docs/case-studies/README.md`
 - `examples/oss-maintainer-wiki/README.md`
 
 ## Maintenance Rules
