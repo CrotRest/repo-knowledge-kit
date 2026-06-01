@@ -7,8 +7,8 @@ This repository contains a Markdown-heavy open-source project. Agents should use
 ## Important Knowledge Areas
 
 - `./`: 7 Markdown files
-- `docs/`: 4 Markdown files
-- `examples/`: 4 Markdown files
+- `docs/`: 5 Markdown files
+- `examples/`: 5 Markdown files
 - `.github/`: 3 Markdown files
 
 ## Read First

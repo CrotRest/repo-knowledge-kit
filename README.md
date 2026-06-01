@@ -32,6 +32,7 @@ node ./bin/rkk.js --help
 
 ```bash
 rkk audit .
+rkk issue-triage ./issue.md
 rkk release-prep .
 rkk make-agents .
 rkk init .
@@ -94,6 +95,12 @@ node ./bin/rkk.js init ./examples/oss-maintainer-wiki --force
 ### `rkk audit [root] [--json]`
 
 Scans Markdown files and prints a repository knowledge audit.
+
+### `rkk issue-triage <issue.md> [--root <root>] [--json] [--prompt] [--api]`
+
+Classifies an issue and suggests a maintainer action. By default this uses deterministic local heuristics and makes no network calls.
+
+Use `--prompt` to print the exact prompt for review. Use `--api` to opt into the OpenAI Responses API with `OPENAI_API_KEY`; no repository or issue content is sent unless this flag is explicitly passed.
 
 ### `rkk release-prep [root] [--json]`
 

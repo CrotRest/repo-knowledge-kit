@@ -12,7 +12,7 @@ Use this workflow for first-pass review and maintainer load reduction.
 
 ## Repository Context
 
-- Markdown files scanned: 18
+- Markdown files scanned: 20
 - Main knowledge areas: `.`, `docs/`, `examples/`, `.github/`
 
 ## Review Output
