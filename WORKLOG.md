@@ -38,8 +38,8 @@ Open-source maintenance evidence:
 - Public MIT-licensed GitHub repository.
 - Security policy, code of conduct, contributing guide, issue templates, and pull request template.
 - GitHub Actions CI workflow.
-- 12 merged pull requests.
-- 5 closed issues, 0 open issues.
+- More than 10 merged pull requests.
+- All current roadmap issues closed.
 - 7 GitHub releases from `v0.1.0` through `v0.1.6`.
 - Latest CI checks passed before merging the release PR.
 
