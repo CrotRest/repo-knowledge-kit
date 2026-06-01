@@ -127,6 +127,7 @@ This is an early maintainer-focused MVP. The core CLI is dependency-free and des
 - Versioned release
 - Dogfooded `AGENTS.md` and Codex workflow files
 - Public case studies against real repositories
+- Codex for OSS application packet in [docs/codex-for-oss-application-packet.md](docs/codex-for-oss-application-packet.md)
 
 ## License
 
