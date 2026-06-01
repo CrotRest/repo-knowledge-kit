@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Added public repository case studies for `openai/openai-node`, `openai/openai-python`, and `CrotRest/repo-knowledge-kit`.
+- Linked case studies from the README and Codex for OSS application notes.
+
 ## 0.1.1
 
 - Added committed dogfood outputs: `AGENTS.md` and `.codex/workflows/`.
