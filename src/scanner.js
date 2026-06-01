@@ -4,6 +4,7 @@ const { readTextFile } = require("./fs-utils");
 
 const IGNORED_DIRS = new Set([
   ".git",
+  ".codex",
   "node_modules",
   ".rkk",
   "dist",

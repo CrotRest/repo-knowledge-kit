@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1
+
+- Added committed dogfood outputs: `AGENTS.md` and `.codex/workflows/`.
+- Added code of conduct, demo documentation, and stronger Codex for OSS application notes.
+- Added npm package metadata for repository, homepage, and issue tracker.
+- Prevented generated `.codex` workflow files from being scanned back into repository audits.
+
 ## 0.1.0
 
 - Added dependency-free `rkk` CLI.
